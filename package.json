@@ -1,6 +1,6 @@
 {
     "name": "swap-text",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Swap characters in a string.",
     "repository": "https://github.com/Richienb/swap-text.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",

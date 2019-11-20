@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "swap-text",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Swap characters in a string.",
+    "repository": "https://github.com/Richienb/swap-text.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,13 +11,20 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
+    "keywords": [
+        "swap",
+        "text",
+        "characters",
+        "regex",
+        "change",
+        "positions"
+    ],
     "dependencies": {},
     "devDependencies": {
         "ava": "^2.1.0",

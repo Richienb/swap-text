@@ -1,14 +1,16 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * Swap characters in a string.
+ * @param text The text to transform.
+ * @param a The first group of characters to swap with the second.
+ * @param b The second group of characters to swap with the first.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const swapText = require("swap-text");
+ *
+ * swapText("abcdef", "ab", "cd")
+ * //=> 'cdabef'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare function swapText(string: string, a: string, b: string): string;
 
-export = theModule;
+export = swapText;

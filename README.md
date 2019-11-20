@@ -1,41 +1,42 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Swap text [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/swap-text/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/swap-text)
 
-My awesome module.
+Swap characters in a string.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/swap-text.png)](https://npmjs.com/package/swap-text)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install swap-text
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const swapText = require("swap-text");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+swapText("abcdef", "ab", "cd")
+//=> 'cdabef'
 ```
 
 ## API
 
-### theModule(input, options?)
+### swapText(string, a, b)
 
-#### input
+#### string
 
 Type: `string`
 
-Lorem ipsum.
+The text to transform.
 
-#### options
+#### a
 
-Type: `object`
+Type: `string`
 
-##### postfix
+The first group of characters to swap with the second.
 
-Type: `string`\
-Default: `rainbows`
+#### b
 
-Lorem ipsum.
+Type: `string`
+
+The second group of characters to swap with the first.

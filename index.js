@@ -1,7 +1,3 @@
-"use strict"
+"use script"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
-
-    return `${input} & ${postfix}`
-}
+module.exports = (text, a, b) => text.replace(new RegExp(`(${a}|${b})`, "g"), ($1) => $1 === a ? b : a)
